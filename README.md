@@ -1,3 +1,4 @@
 # data_ingest
-SKP sqoop / flume / kafka exercises
-11
+11st KIM JANG HYUN
+SKT sqoop / flume / kafka exercises
+
