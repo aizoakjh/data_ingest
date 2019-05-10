@@ -1,0 +1,9 @@
+sqoop import \
+--connect jdbc:mysql://localhost/loudacre \
+--username training --password training \
+--table accounts \
+--columns "acct_num, first_name, last_name" \
+--target-dir /loudacre/accounts/CA \
+--where "state='CA'" \
+--as-avrodatafile \
+--compression-codec org.apache.hadoop.io.compress.SnappyCodec
