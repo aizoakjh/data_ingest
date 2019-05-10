@@ -1,0 +1,9 @@
+sqoop import \
+--connect jdbc:mysql://localhost/loudacre \
+--username training --password training \
+--table accounts \
+--columns "acct_num, first_name, last_name" \
+--target-dir /loudacre/user_compressed \
+--fields-terminated-by "\t" \
+--as-parquetfile \
+--compression-codec org.apache.hadoop.io.compress.SnappyCodec
